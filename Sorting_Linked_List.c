@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -13,10 +12,10 @@ typedef struct NODE1 {
 void ListInsert(NODE **target, int data)
 {
 	NODE *newNode = (NODE*)malloc(sizeof(NODE));
-	newNode->next = *target;  //newNodeÀÇ ³ëµåÀÇ next°¡ head °ªÀÌ´Ù.
+	newNode->next = *target;  //newNodeì˜ ë…¸ë“œì˜ nextê°€ head ê°’ì´ë‹¤.
 	newNode->data = data;
 
-	*target = newNode;  //»õ·Î¿î head°¡ newNodeÀÌ´Ù.
+	*target = newNode;  //ìƒˆë¡œìš´ headê°€ newNodeì´ë‹¤.
 }
 
 void printnode(NODE* root) {
@@ -93,4 +92,3 @@ int main()
 	}
 	return 0;
 }
-*/
